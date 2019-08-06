@@ -1,4 +1,4 @@
 require("@babel/register");
 require("@babel/polyfill");
 
-require("./actions/buildSnapshot.js").default.execute();
+require("./actions/run.js").default.run();

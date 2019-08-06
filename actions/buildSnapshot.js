@@ -1,6 +1,5 @@
 import ZeroExHelper from "../lib/ZeroExHelper.js";
 import GanacheHelper from "../lib/GanacheHelper.js";
-import AugurHelper from "../lib/AugurHelper.js";
 
 export default {
     execute
@@ -13,9 +12,10 @@ async function execute() {
 
     const ganache = await GanacheHelper.start({db_path: zeroEx.snapshotPath});
 
-    console.log(zeroEx.snapshotPath);
+    const TestFixture =require("../node_modules/augur/packages/augur-core/build/tests-integration/TestFixture.js").TestFixture;
 
-    const augur = await AugurHelper.create();
-    await augur.runIntegrationTests();
+    const fixture = await TestFixture.create();
+    await fixture.approveCentralAuthority();
+
     await ganache.stop();
 }
