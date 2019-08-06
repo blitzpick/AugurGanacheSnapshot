@@ -11,11 +11,12 @@ async function execute() {
     await zeroEx.getLatestSnapshot();
 
     const ganache = await GanacheHelper.start({db_path: zeroEx.snapshotPath});
+    try {
+        const TestFixture =require("../node_modules/augur/packages/augur-core/build/tests-integration/TestFixture.js").TestFixture;
 
-    const TestFixture =require("../node_modules/augur/packages/augur-core/build/tests-integration/TestFixture.js").TestFixture;
-
-    const fixture = await TestFixture.create();
-    await fixture.approveCentralAuthority();
-
-    await ganache.stop();
+        const fixture = await TestFixture.create();
+        await fixture.approveCentralAuthority();
+    } finally {
+        await ganache.stop();
+    }
 }
