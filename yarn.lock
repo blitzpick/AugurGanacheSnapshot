@@ -6559,6 +6559,11 @@ rlp@^2.0.0, rlp@^2.2.1:
     bn.js "^4.11.1"
     safe-buffer "^5.1.1"
 
+root-path@^0.2.1:
+  version "0.2.1"
+  resolved "https://registry.npmjs.org/root-path/-/root-path-0.2.1.tgz#43d50ed4214d4d6c8d99a10c11a5e391c385e39d"
+  integrity sha1-Q9UO1CFNTWyNmaEMEaXjkcOF450=
+
 rustbn.js@~0.2.0:
   version "0.2.0"
   resolved "https://registry.npmjs.org/rustbn.js/-/rustbn.js-0.2.0.tgz#8082cb886e707155fd1cb6f23bd591ab8d55d0ca"
