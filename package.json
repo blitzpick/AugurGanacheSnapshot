@@ -34,6 +34,7 @@
     "@babel/preset-env": "7.5.5",
     "@babel/register": "7.5.5",
     "@babel/runtime": "7.5.5",
+    "ganache-core": "^2.6.1",
     "root-path": "^0.2.1"
   }
 }
