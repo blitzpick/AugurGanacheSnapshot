@@ -16,9 +16,6 @@
     "url": "https://github.com/blitzpick/AugurGanacheSnapshot/issues"
   },
   "homepage": "https://github.com/blitzpick/AugurGanacheSnapshot#readme",
-  "engines": {
-    "node": "10.x"
-  },
   "dependencies": {
     "augur": "augurProject/augur#7f8105a",
     "download": "7.1.0",
