@@ -12,20 +12,33 @@ async function execute() {
 
     const zeroEx = ZeroExHelper.create();
 
-    await zeroEx.getLatestSnapshot();
+    await zeroEx.getLatestZeroExGanacheSnapshot();
 
     const ganache = await GanacheHelper.start({db_path: zeroEx.snapshotPath});
 
     try {
         const TestFixture = require("../node_modules/augur/packages/augur-core/build/tests-integration/TestFixture.js").TestFixture;
 
+        // for this to properly work, augur-core/src/ContractDeployer.ts needs to be changed to
+        /*
+
+          private async uploadAllContracts(): Promise<void> {
+            console.log('Uploading contracts...');
+            for (let contract of this.contracts) {
+            await this.upload(contract);
+            }
+          }
+
+         */
         const fixture = await TestFixture.create();
         await fixture.approveCentralAuthority();
+
+        await ganache.stop();
+        await createAugurZeroExGanacheSnapshot();
     } catch(err) {
         console.log(err);
     }
         finally {
-        await Delay.wait(600000);
         await ganache.stop();
     }
 }
