@@ -17,9 +17,6 @@
   },
   "homepage": "https://github.com/blitzpick/AugurGanacheSnapshot#readme",
   "dependencies": {
-    "augur": "augurProject/augur#ff24b4d",
-    "download": "7.1.0",
-    "lodash": "4.17.15",
     "@babel/core": "7.5.5",
     "@babel/plugin-proposal-class-properties": "^7.5.5",
     "@babel/plugin-proposal-object-rest-spread": "^7.5.5",
@@ -28,7 +25,11 @@
     "@babel/preset-env": "7.5.5",
     "@babel/register": "7.5.5",
     "@babel/runtime": "7.5.5",
+    "augur": "augurProject/augur#ff24b4d",
+    "download": "7.1.0",
+    "fs-extra": "8.1.0",
     "ganache-core": "^2.6.1",
+    "lodash": "4.17.15",
     "root-path": "^0.2.1"
   }
 }
