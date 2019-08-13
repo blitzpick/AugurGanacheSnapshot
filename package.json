@@ -20,7 +20,7 @@
     "node": "10.x"
   },
   "dependencies": {
-    "augur": "augurProject/augur#7f8105a",
+    "augur": "augurProject/augur#ff24b4d",
     "download": "7.1.0",
     "lodash": "4.17.15",
     "@babel/core": "7.5.5",
