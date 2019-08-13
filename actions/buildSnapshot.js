@@ -46,10 +46,10 @@ function _patchContractDeployer() {
     /*
 
         private async uploadAllContracts(): Promise<void> {
-        console.log('Uploading contracts...');
-        for (let contract of this.contracts) {
-        await this.upload(contract);
-        }
+            console.log('Uploading contracts...');
+            for (let contract of this.contracts) {
+                await this.upload(contract);
+            }
         }
 
         */
