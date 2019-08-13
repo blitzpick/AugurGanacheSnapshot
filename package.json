@@ -25,7 +25,7 @@
     "@babel/preset-env": "7.5.5",
     "@babel/register": "7.5.5",
     "@babel/runtime": "7.5.5",
-    "augur": "augurProject/augur#ff24b4d18c7b908044f440c85b8f4228c5b62ce0",
+    "augur": "augurProject/augur#716c43f992791f6d23ef1c15cda5aa6bcf96728e",
     "download": "7.1.0",
     "fs-extra": "8.1.0",
     "ganache-core": "2.6.1",

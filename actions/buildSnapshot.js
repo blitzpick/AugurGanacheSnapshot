@@ -27,7 +27,7 @@ async function execute() {
 
         await ganache.stop();
 
-        fs.copySync(root("node_modules/augur/packages/augur-core/output/contracts"), root("artifacts"), {overwrite: true})
+        fs.copySync(root("node_modules/augur/packages/augur-artifacts/src"), root("artifacts"), {overwrite: true})
 
         await snapshot.createAugurZeroExGanacheSnapshot();
 
